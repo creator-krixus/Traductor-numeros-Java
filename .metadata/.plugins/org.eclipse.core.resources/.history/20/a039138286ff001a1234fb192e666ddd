@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Contador {
+	private int numero;
+	private String cadena;
+	private Scanner input;
+	
+	//public void capturaDato() {
+	//	input=new Scanner(System.in);
+	//	System.out.println("Ingresar temperura");
+	//	numero=input.nextInt();
+		
+	//}
+	public void capturaNombre() {
+		input=new Scanner(System.in);
+		System.out.println("Ingresar temperatura");
+	}
+	
+	public void mostrar() {
+		System.out.println(numero);
+		
+	}
+	public void nombre() {
+		System.out.println("cadena");
+		
+	}
+	public static void main(String[] args) {
+		Contador cuenta=new Contador();
+		cuenta.capturaDato();
+		cuenta.capturaNombre();
+		cuenta.mostrar();
+		cuenta.nombre();
+	}
+}

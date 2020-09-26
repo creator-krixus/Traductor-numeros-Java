@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Contador {
+	private String temperatura;
+	private Scanner ingresar;
+	
+	private String nombreUno="uno";
+	private String nombreDos="dos";
+	private String nombreTres="tres";
+	private String nombreCuatro="cuatro";
+	private String nombreCinco="cinco";
+	private String nombreSeis="seis";
+	private String nombreSiete="siete";
+	private String nombreOcho="ocho";
+	private String nombreNueve="nueve";
+	private String nombreCero="cero";
+	
+	private String Uno="1";
+	private String Dos="2";
+	private String Tres="3";
+	private String Cuatro="4";
+	private String Cinco="5";
+	private String Seis="6";
+	private String Siete="7";
+	private String Ocho="8";
+	private String Nueve="9";
+	private String Cero="0";
+	
+	private String zero="zero";
+	private String one="zero";
+	private String two="zero";
+	private String three="zero";
+	private String four="zero";
+	private String five="zero";
+	private String six="zero";
+	private String seven="zero";
+	private String eight="zero";
+	private String nine="zero";
+	
+	
+	public void ingresarDatos() {
+		ingresar=new Scanner(System.in);
+		System.out.println("Ingresar temperatura");
+		temperatura=ingresar.next();
+		
+	}
+	public void mostrar() {
+		String[] numeros= {"1","2","3","4","5","6","7","8","9","0"};
+	
+		if(temperatura.equalsIgnoreCase(Uno) || temperatura.equalsIgnoreCase(Cero) || temperatura.equalsIgnoreCase(Tres)
+		|| temperatura.equalsIgnoreCase(Dos)	|| temperatura.equalsIgnoreCase(Cuatro) || temperatura.equalsIgnoreCase(Cinco)
+		|| temperatura.equalsIgnoreCase(Seis) || temperatura.equalsIgnoreCase(Siete) || temperatura.equalsIgnoreCase(Ocho)
+		|| temperatura.equalsIgnoreCase(Nueve)){
+			System.out.println("La temperatura es de: "+ temperatura +" "+ "grados");
+			
+		}else if(temperatura.equalsIgnoreCase(nombreUno) || temperatura.equalsIgnoreCase(nombreCero) || temperatura.equalsIgnoreCase(nombreTres)
+				|| temperatura.equalsIgnoreCase(nombreDos)	|| temperatura.equalsIgnoreCase(nombreCuatro) || temperatura.equalsIgnoreCase(nombreCinco)
+				|| temperatura.equalsIgnoreCase(nombreSeis) || temperatura.equalsIgnoreCase(nombreSiete) || temperatura.equalsIgnoreCase(nombreOcho)
+				|| temperatura.equalsIgnoreCase(nombreNueve)) {
+				for(int i=0; i<numeros.length; i++) {
+					System.out.println(temperatura.equalsIgnoreCase(i));
+				}
+		}else {
+			System.out.println("ERROR");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Contador conteo=new Contador();
+		conteo.ingresarDatos();
+		conteo.mostrar();
+	}
+
+}

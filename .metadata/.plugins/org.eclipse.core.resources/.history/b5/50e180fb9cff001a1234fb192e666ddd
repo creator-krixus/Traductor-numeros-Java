@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Contador {
+	private String temperatura;
+	private Scanner ingresar;
+	
+	public void ingresarDatos() {
+		ingresar=new Scanner(System.in);
+		System.out.println("Ingresar temperatura:");
+		temperatura=ingresar.next();
+		
+	}
+	public void mostrar() {
+		System.out.println(temperatura);
+	}
+	
+	public static void main(String[] args) {
+		Contador conteo=new Contador();
+		conteo.ingresarDatos();
+		conteo.mostrar();
+	}
+
+}
