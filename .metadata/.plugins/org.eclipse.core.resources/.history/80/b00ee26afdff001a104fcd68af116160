@@ -1,0 +1,11 @@
+
+public class IntefazVisible {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Contador conteo=new Contador();
+		conteo.ingresarDatos();
+		conteo.mostrar();
+	}
+
+}

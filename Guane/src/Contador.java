@@ -1,42 +1,25 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Contador {
 	private String temperatura;
 	private Scanner ingresar;
 	
-	private String nombreUno="uno";
-	private String nombreDos="dos";
-	private String nombreTres="tres";
-	private String nombreCuatro="cuatro";
-	private String nombreCinco="cinco";
-	private String nombreSeis="seis";
-	private String nombreSiete="siete";
-	private String nombreOcho="ocho";
-	private String nombreNueve="nueve";
-	private String nombreCero="cero";
+//Variables numeros en español.
 	
-	private String Uno="1";
-	private String Dos="2";
-	private String Tres="3";
-	private String Cuatro="4";
-	private String Cinco="5";
-	private String Seis="6";
-	private String Siete="7";
-	private String Ocho="8";
-	private String Nueve="9";
-	private String Cero="0";
+	private String nombreUno="uno", nombreDos="dos", nombreTres="tres", nombreCuatro="cuatro", nombreCinco="cinco",
+					nombreSeis="seis", nombreSiete="siete", nombreOcho="ocho", nombreNueve="nueve", nombreCero="cero";
+
+//Varibles numeros en enteros.
 	
-	private String zero="zero";
-	private String one="one";
-	private String two="two";
-	private String three="three";
-	private String four="four";
-	private String five="five";
-	private String six="six";
-	private String seven="seven";
-	private String eight="eight";
-	private String nine="nine";
+	private String Uno="1", Dos="2", Tres="3", Cuatro="4", Cinco="5", Seis="6", Siete="7", Ocho="8", Nueve="9", Cero="0";
 	
+//Variables numeros en ingles.
+	
+	private String zero="zero", one="one", two="two", three="three", four="four", five="five", six="six", seven="seven",
+					eight="eight", nine="nine";
+	
+//Metodo para ingresar datos mediante pantalla.
 	
 	public void ingresarDatos() {
 		ingresar=new Scanner(System.in);
@@ -44,16 +27,22 @@ public class Contador {
 		temperatura=ingresar.next();
 		
 	}
+
+	
+//Metodo que traduce la entrada que captura por pantalla y muestra al usuario el numero al que se refiere.
+	
 	public void mostrar() {
 		
 		if(temperatura.equalsIgnoreCase(zero) || temperatura.equalsIgnoreCase(one) || temperatura.equalsIgnoreCase(two)
 				|| temperatura.equalsIgnoreCase(three)	|| temperatura.equalsIgnoreCase(four) || temperatura.equalsIgnoreCase(five)
 				|| temperatura.equalsIgnoreCase(six) || temperatura.equalsIgnoreCase(seven) || temperatura.equalsIgnoreCase(eight)
 				|| temperatura.equalsIgnoreCase(nine)) {
+			
 			switch(temperatura.toLowerCase()) {
 			
 			case "one":
-				System.out.println("La temperatura es de "+ 1 +" "+"grados");
+		        JOptionPane.showMessageDialog(null, "La temperatura es de "+ 1 +" "+"grados" );
+				//System.out.println("La temperatura es de "+ 1 +" "+"grados");
 				break;
 			case "two":
 				System.out.println("La temperatura es de "+ 2 +" "+"grados");
@@ -90,6 +79,7 @@ public class Contador {
 				|| temperatura.equalsIgnoreCase(Nueve)){
 			
 						System.out.println("La temperatura es de "+ temperatura +" "+ "grados");
+				
 			
 		}else if(temperatura.equalsIgnoreCase(nombreUno) || temperatura.equalsIgnoreCase(nombreCero) || temperatura.equalsIgnoreCase(nombreTres)
 				|| temperatura.equalsIgnoreCase(nombreDos)	|| temperatura.equalsIgnoreCase(nombreCuatro) || temperatura.equalsIgnoreCase(nombreCinco)
@@ -134,10 +124,4 @@ public class Contador {
 		}
 	}
 	
-	public static void main(String[] args) {
-		Contador conteo=new Contador();
-		conteo.ingresarDatos();
-		conteo.mostrar();
-	}
-
 }

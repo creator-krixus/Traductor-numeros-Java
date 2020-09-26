@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class IngresarDatos {
+	private String temperatura;
+	private Scanner ingresar;
+	
+	public void ingresarDatos() {
+		ingresar=new Scanner(System.in);
+		System.out.println("Ingresar dato: ");
+		temperatura=ingresar.next();
+	}
+}
