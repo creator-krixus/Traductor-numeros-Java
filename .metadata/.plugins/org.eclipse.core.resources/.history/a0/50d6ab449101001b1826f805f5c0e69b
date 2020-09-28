@@ -2,14 +2,13 @@ import java.util.Scanner;
 
 
 public class Contador {
-	
 	private String temperatura;
 	private Scanner ingresar;
 	
 //Variables numeros en español.
 	
 	private String nombreUno="uno", nombreDos="dos", nombreTres="tres", nombreCuatro="cuatro", nombreCinco="cinco",
-				nombreSeis="seis", nombreSiete="siete", nombreOcho="ocho", nombreNueve="nueve", nombreCero="cero";
+					nombreSeis="seis", nombreSiete="siete", nombreOcho="ocho", nombreNueve="nueve", nombreCero="cero";
 
 //Varibles numeros en enteros.
 	

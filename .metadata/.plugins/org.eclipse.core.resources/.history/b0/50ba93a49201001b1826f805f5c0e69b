@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 
 public class Contador {
-	
 	private String temperatura;
 	private Scanner ingresar;
 	
