@@ -1,0 +1,12 @@
+
+public class Principal extends AnalisisDatos {
+
+	public static void main(String[] args) {
+	
+		Contador conteo=new Contador();
+		conteo.ingresarDatos();
+		AnalisisDatos analiza=new AnalisisDatos();
+		analiza.mostrar();
+//		conteo.mostrar();
+	}
+}

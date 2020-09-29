@@ -1,0 +1,10 @@
+
+public class IngresoDatos extends Datos{
+	
+	public void ingresarDatos() {
+		System.out.println("Ingresar dato: ");
+		temperatura=ingresar.next();
+		
+	}
+
+}

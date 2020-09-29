@@ -1,0 +1,12 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		Contador conteo=new Contador();
+		conteo.ingresarDatos();
+		AnalisisDatos analizar=new AnalisisDatos();
+		analizar.mostrar();
+//		conteo.mostrar();
+	}
+}
