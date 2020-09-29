@@ -13,7 +13,7 @@ public class Datos {
 	protected String nombreUno="uno", nombreDos="dos", nombreTres="tres", nombreCuatro="cuatro", nombreCinco="cinco",
 				nombreSeis="seis", nombreSiete="siete", nombreOcho="ocho", nombreNueve="nueve", nombreCero="cero";
 
-//Variables numeros en enteros.
+//Varibles numeros en enteros.
 	
 	protected String Uno="1", Dos="2", Tres="3", Cuatro="4", Cinco="5", Seis="6", Siete="7", Ocho="8", Nueve="9", Cero="0";
 	

@@ -1,4 +1,4 @@
-//Analisis de los datos ingresados al sistema para mostrar en pantalla.
+//Analisis de los datos ingresados al sistema
 
 public class AnalisisDatos extends IngresoDatos{
 	
